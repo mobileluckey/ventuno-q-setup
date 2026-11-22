@@ -36,3 +36,15 @@ convert left.jpg right.jpg +append stereo-pair.jpg
 
 - Tested November 2026.
 - Warnings about MESA-LOADER at startup are harmless.
+
+## Sound and voice
+
+Audio goes to a JBL Flip 5 over Bluetooth (the board has no headphone jack).
+
+Reconnect the speaker after a reboot:
+
+    bluetoothctl connect B8:F6:53:A0:E8:C3
+
+Speech uses [Piper](https://github.com/OHF-Voice/piper1-gpl) (offline text-to-speech), installed in `~/piper-env` with the Norman voice in `~/piper-voices`:
+
+    ./say.sh "Hello, I'm Matthew."
