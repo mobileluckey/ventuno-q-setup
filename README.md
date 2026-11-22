@@ -45,6 +45,11 @@ Reconnect the speaker after a reboot:
 
     bluetoothctl connect B8:F6:53:A0:E8:C3
 
+
+    
+
 Speech uses [Piper](https://github.com/OHF-Voice/piper1-gpl) (offline text-to-speech), installed in `~/piper-env` with the Norman voice in `~/piper-voices`:
 
     ./say.sh "Hello, I'm Matthew."
+
+Demo video: [Matthew's first words](https://youtu.be/bQ4f_kMQcgA)
